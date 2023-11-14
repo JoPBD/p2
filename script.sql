@@ -1,4 +1,7 @@
-
+-- -- Exercicio 3
+ALTER TABLE tb_top_youtubers ADD COLUMN ativo INTEGER DEFAULT 1 CHECK (ativo IN (0, 1));
+--testando
+INSERT INTO tb_top_youtubers(ativo) VALUES (2)
 
 -- 2 Trigger
 -- Escreva um trigger com as seguintes características
